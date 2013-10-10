@@ -1,5 +1,5 @@
-if defined?(::Refinery::User)
-  ::Refinery::User.all.each do |user|
+if defined?(::Spree::User)
+  ::Spree::User.all.each do |user|
     if user.plugins.where(:name => 'refinerycms-banners').blank?
       user.plugins.create(:name => 'refinerycms-banners',
                           :position => (user.plugins.maximum(:position) || -1) +1)
