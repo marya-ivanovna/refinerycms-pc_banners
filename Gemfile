@@ -2,7 +2,8 @@ source "http://rubygems.org"
 
 gemspec
 
-gem 'refinerycms', '~> 2.0.0'
+gem 'refinerycms', '~> 2.1.0'
+gem 'refinerycms-acts-as-indexed', :github => 'refinery/refinerycms-acts-as-indexed', :branch => '1-0-stable'
 
 # Refinery/rails should pull in the proper versions of these
 group :assets do
