@@ -3,7 +3,7 @@ module Refinery
     class Banner < Refinery::Core::BaseModel
       self.table_name = 'refinery_banners'
 
-      acts_as_indexed :fields => [:name, :url, :title, :description]
+      #acts_as_indexed :fields => [:name, :url, :title, :description]
 
       attr_accessible :name, :title, :description, :image_id, :url, :is_active, :start_date, :expiry_date, :position, :page_ids
 
