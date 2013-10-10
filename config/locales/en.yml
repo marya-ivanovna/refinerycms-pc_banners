@@ -1,7 +1,7 @@
 en:
   refinery:
     plugins:
-      banners:
+      refinerycms_banners:
         title: Banners
     banners:
       admin:
