@@ -20,7 +20,7 @@ class CreateBannersBanners < ActiveRecord::Migration
 
   def down
     if defined?(::Spree::UserPlugin)
-      ::Spree::UserPlugin.destroy_all({:name => "refinerycms-banners"})
+      ::Spree::UserPlugin.destroy_all({:name => "refinerycms_banners"})
     end
 
     if defined?(::Refinery::Page)

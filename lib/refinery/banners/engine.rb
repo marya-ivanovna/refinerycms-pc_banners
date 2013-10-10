@@ -8,7 +8,7 @@ module Refinery
 
       initializer "register refinerycms_banners plugin" do
         Refinery::Plugin.register do |plugin|
-          plugin.name = "banners"
+          plugin.name = "refinerycms_banners"
           plugin.url = proc { Refinery::Core::Engine.routes.url_helpers.banners_admin_banners_path }
           plugin.pathname = root
           plugin.activity = {
@@ -25,7 +25,7 @@ module Refinery
       end
 
       config.after_initialize do
-        Refinery.register_extension(Refinery::Banners)
+        Refinery.register_engine(Refinery::Banners)
       end
     end
   end
